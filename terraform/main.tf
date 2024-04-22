@@ -14,7 +14,7 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  shared_credentials_file = pathexpand(var.aws_credentials_file_path)
+  profile = "default"
   region = var.aws_region
 }
 
